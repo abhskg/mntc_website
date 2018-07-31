@@ -3,10 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import Carousel from './components/carousel';
 
+
 class App extends Component {
   render() {
     return (
-      <Carousel />
+      <div>
+        <Carousel />
+        <h1>Our Events</h1>
+      </div>
     );
   }
 }
