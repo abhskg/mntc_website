@@ -1,12 +1,26 @@
 import React,{ Component } from 'react';
 import Carousel from 'nuka-carousel';
-import './carousel.css';
+import './css/carousel.css';
 
 export default class extends React.Component {
     render() {
+        let carouselItems = [
+            {
+                'name': '1.jpg',
+                'caption': "Image 1"
+            },
+            {
+                'name': '2.jpg',
+                'caption': "Image 2"
+            },
+            {
+                'name': '4.jpg',
+                'caption': "Image 3"
+            }
+        ]
       return (
         <Carousel 
-            // autoplay="true" 
+            autoplay="true" 
             autoplayInterval="1500" 
             wrapAround="true"
             renderCenterLeftControls={({ previousSlide }) => (
@@ -16,18 +30,12 @@ export default class extends React.Component {
                 <i onClick={nextSlide} class="fa fa-chevron-right fa-2x"></i>
             )}
         >
-         <div className="image-cont">
-          <img src="assets/1.jpg" />
-          <p className="image-desc">Image 1</p>
-         </div>
-         <div className="image-cont">
-          <img src="assets/2.jpg" />
-          <p className="image-desc">Image 2</p>
-         </div>
-         <div className="image-cont">
-          <img src="assets/4.jpg" />
-          <p className="image-desc">Image 2</p>
-         </div>
+            {carouselItems.map((item, index) => (
+                <div className="image-cont" key={index}>
+                    <img src={"assets/" + item.name} />
+                    <p className="image-desc">{item.caption}</p>
+                </div>
+            ))}
         </Carousel>
       );
     }
