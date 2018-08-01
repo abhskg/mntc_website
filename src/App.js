@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Carousel from './components/carousel';
 import Header from './components/header';
+import Body from './components/body';
+import Footer from './components/footer';
 
 
 class App extends Component {
@@ -11,7 +13,8 @@ class App extends Component {
       <div>
         <Header />
         <Carousel />
-        <h1>Our Events</h1>
+        <Body />
+        <Footer />
       </div>
     );
   }

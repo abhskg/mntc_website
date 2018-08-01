@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 import './css/header.css';
-import logo from '../static/images/logo.png';
+import logo from '../static/images/mntc.png';
 
 class Header extends Component {
     render(){
@@ -27,11 +27,11 @@ class Header extends Component {
                     <a className="site_logo" href="/">
                         <img src={logo}/>    
                     </a> 
-                    <div>
+                    <div style={{ 'float': 'right' }}>
                         {NavbarItems.map((item, index) =>(
                             <button className="navbar_button" key={index} >
-                                <span class="mat-button-wrapper">
-                                    <div class="layout-row layout-align-start-center">
+                                <span>
+                                    <div>
                                         <span>{item.name}</span>
                                     </div>
                                 </span>

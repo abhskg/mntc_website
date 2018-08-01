@@ -1,5 +1,7 @@
 .site_header {
-    position: relative;
+    position: fixed;
+    z-index: 1000;  
+    width: 100%;
 }
 
 .site_navbar {
@@ -33,7 +35,6 @@
 .navbar_button{
     background-color: inherit;
     color:inherit;
-
     height: 60px;
     margin-right: 5px;
     padding: 0 20px;

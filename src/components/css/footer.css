@@ -1,0 +1,58 @@
+.site_footer{
+    padding: 10px 30px;
+    background-color: #0c4265;
+    box-sizing: border-box;
+    display: block;
+    pointer-events: none;
+    width: 100%;
+    margin: auto;
+    color :white;
+    background: linear-gradient(to top left, #417f7c 0%, #252d2d 82%);
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+    align-content: center;
+}
+
+.site_footer img{
+    margin: 0 auto;
+    display: block;
+    height: 40px;
+    /* width: 108px; */
+    line-height: 0;
+    max-width: 100%;
+}
+
+.footer_info{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Roboto';
+}
+
+.social_icons{
+    display: flex;
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+}
+
+hr {
+    border: 0; height: 1px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+.icon {
+    padding: 0 8px;
+    display: block;
+}
+
+.credit_text{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-family: pacifico;
+    font-size: 1.2em;
+}
+
+
