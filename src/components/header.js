@@ -27,7 +27,7 @@ class Header extends Component {
                     <a className="site_logo" href="/">
                         <img src={logo}/>    
                     </a> 
-                    <div style={{ 'float': 'right' }}>
+                    <div>
                         {NavbarItems.map((item, index) =>(
                             <button className="navbar_button" key={index} >
                                 <span>
