@@ -2,6 +2,10 @@ import React,{ Component } from 'react';
 import './css/header.css';
 import logo from '../static/images/mntc.png';
 
+// function goToUrl(){
+//     window.location = '/team';
+// }
+
 class Header extends Component {
     render(){
         let NavbarItems = [
@@ -27,7 +31,7 @@ class Header extends Component {
                     <a className="site_logo" href="/">
                         <img src={logo}/>    
                     </a> 
-                    <div>
+                    <div className='buttons_group'>
                         {NavbarItems.map((item, index) =>(
                             <button className="navbar_button" key={index} >
                                 <span>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto');
+ @import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto'); 
 
 body {
   height: 100%;
@@ -9,5 +9,6 @@ body {
   overflow-x: hidden;
   font-family: 'Roboto' ,sans-serif;
   font-size: 14px;
+  background-color: rgb(58, 57, 57);
   -webkit-text-size-adjust: 100%;
 }

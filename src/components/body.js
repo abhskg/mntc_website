@@ -20,12 +20,15 @@ class Body extends Component{
         ]
         return(
             <div className="site_body">
-                {contents.map((item, index) =>(
-                    <Card 
-                        title={item.title}
-                        content={item.content}
-                    />
-                ))}
+                <h1>About Us</h1>
+                <div className='card_holder'>
+                    {contents.map((item, index) =>(
+                        <Card 
+                            title={item.title}
+                            content={item.content}
+                        />
+                    ))}
+                </div>
             </div>
         );
     }

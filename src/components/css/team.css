@@ -1,0 +1,43 @@
+.member_card{
+    width: 200px;
+    height: 280px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: aquamarine;
+    color: black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-family: Roboto;
+}
+
+.card_image{
+    height:200px;
+    width: 200px;
+    align-content: center;
+    overflow: hidden;
+}
+.card_image > img{
+    height: auto;
+    width: 100%;
+}
+.member_card > h1{
+    font-size: 14px;
+    font-weight: 900;
+    padding:1px 1px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+    overflow-wrap:break-word;
+}
+
+.member_card > h2{
+    font-size: 12px;
+    padding:1px 1px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin:0 auto;
+    overflow-wrap:break-word;
+}

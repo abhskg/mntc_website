@@ -4,11 +4,13 @@ import Carousel from './components/carousel';
 import Header from './components/header';
 import Body from './components/body';
 import Footer from './components/footer';
+import Events from './components/events';
+import Team from './components/team';
 
 export default ()=>(
     <BrowserRouter>
         <Switch>
-            <Route path='/' render={()=>( 
+            <Route path='/' exact render={()=>( 
                 <div>
                     <Header />
                     <Carousel />
@@ -16,9 +18,17 @@ export default ()=>(
                     <Footer />
                 </div>
             )} />
-            <Route path='/event' render={()=>( 
+            <Route path='/event' exact render={()=>( 
                 <div>
                     <Header />
+                    <Events />
+                    <Footer />
+                </div>
+            )} />
+            <Route path='/team' exact render={()=>( 
+                <div>
+                    <Header />
+                    <Team />
                     <Footer />
                 </div>
             )} />
